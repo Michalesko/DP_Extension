@@ -1,0 +1,92 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font: 400 1.8rem/1.6875 'Roboto', sans-serif;
+    font: 400 18px/1.6875 'Roboto', sans-serif;
+    background: #fff;
+    color: #222;
+}
+
+h1, ul, ol, blockquote, p {
+    margin: 0 0 20px 0;
+    margin: 0 0 2rem 0;
+}
+
+ul, ol {
+    padding-left: 40px;
+}
+
+h1{
+    font-weight: 400;
+    font-size: 36px;
+}
+
+img {
+    display: block;
+    width: 100%;
+    margin: 0 auto 20px auto;
+    margin: 0 auto 2rem auto;
+}
+
+.container {
+    max-width: 800px;
+    padding: 20px;
+}
+
+.logo{
+    width: 250px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.message {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#chart {
+    display: block;
+    margin: 0 auto;
+}
+
+.legend{
+    padding: 40px 0 0 0;
+}
+
+.legend table {
+    margin: 0;
+}
+
+.legend table td, .legend table th{
+    text-align: center;
+    padding: 15px;
+}
+
+th.header {
+    cursor: pointer;
+}
+
+.legend .color-box {
+    display: block;
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+}

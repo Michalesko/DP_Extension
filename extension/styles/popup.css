@@ -1,0 +1,78 @@
+body{
+	min-width:400px;
+	max-height: 270px;
+}
+.page-header{
+	margin-bottom:0 !important;
+	margin-top:0 !important
+}
+
+#container{
+	background-color:#f8f8ff
+}
+#title{
+	color:#260126;
+	margin-top:0 !important;
+	padding-top:30px;
+	text-align:center
+}
+#header{
+	background-color:#f2eeb3;
+}
+#settings{
+	text-align: center;
+	cursor:pointer;
+	background-color:#f2eeb3;
+	height:50px;
+	padding:15px 60px;
+}
+#settings:hover{
+	background-color:#afab70;
+}
+#settings-text{
+	color:#260126;
+	font-size: 18px;
+	font-weight:500;
+}
+.goalList{
+	list-style-type: none;
+}
+
+.actualGoal{
+	margin-left: 20px;
+	font-size: 15px;
+	color: red;
+	font-weight: 400;
+	font-style: normal;
+}
+
+#updateGoal{
+	width:100px;
+	height: 25px;
+	margin: 0 auto;
+	margin-bottom: 15px;
+	background-color: #f2eeb3;
+	color: #260126;
+	display: block;
+    line-height: 15px;
+}
+
+#updateGoal:hover{
+	background-color: #afab70;
+}
+
+
+#checkTime{
+	width:100px;
+	height: 25px;
+	margin: 0 auto;
+	background-color: #f2eeb3;
+	color: #260126;
+	display: block;
+    line-height: 15px;
+    margin-bottom: 15px;
+}
+
+#checkTime:hover{
+	background-color: #afab70;
+}

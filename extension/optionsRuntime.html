@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+    <head>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/0.4.1/sweet-alert.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles/optionsRuntime.css" rel="stylesheet">
+        <script src="jquery.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="page-header">
+                <div class="pull-right user-id">
+                    <label>Your name:</label>&nbsp;<span id="uname"></span></br>
+					<label>Your ID:</label>&nbsp;<span id="uid"></span><br>
+					<label>Your DB ID:</label>&nbsp;<span id="dbid"></span>
+                </div>
+
+                <h2 class="text-center"><b>EffectiveBrowsing</b> settings</h2>
+                <p id="decription-text">Tabs reorganization/ color highlighting for better manipulating with tabs and improving users browsing.<br>
+                <span class="warn">WARNING!</span> <b>From the beginning we will not have enough ratings for web pages, therefore extension may require a user review page every time you open a new page.</b></p>
+            </div>
+
+            <h3>User settings</h3>
+            <div class="container">
+				<form>
+				    <div class="form-group row">
+				      	<label for="user_name" class="col-sm-2 col-form-label">NickName</label>
+				      	<div class="col-sm-4">
+				        	<input type="text" class="form-control" id="user_name" placeholder="NickName">
+				      	</div>
+				      	<div id="goal" class="col-sm-6">
+				            (In input form, you can type your name or alias to better analyze your browsing.)
+				      	</div>
+				    </div>
+
+				    <div class="form-group row">
+					    <label for="user_skills" class="col-sm-3 col-form-label">Did you improve your skills with web browsers?</label>
+					    <div class="col-sm-3">
+						    <select class="form-control" id="user_skills">
+						    	<option disabled selected value>Select one</option>
+	                            <option value='beginner'>I'm beginner</option>
+	                            <option value='advanced'>I'm advanced user</option>
+	                            <option value='expert'>I'm expert</option>
+						    </select>
+					    </div>
+					    <div id="goal" class="col-sm-6">
+				            (In select box, choose the option you think, describes the best your browser usage experience.)
+				      	</div>
+					</div>
+
+				    <div class="form-group row">
+				    	<label class="col-sm-12 actual">Actual browsing goal: <span class="actualGoal" id="actual_goal"></span></label></br>
+					    <label for="user_goal" class="col-sm-2 col-form-label">Do you want to change your current browsing goal?</label>
+					    <div class="col-sm-4">
+		                     <ul class="goalList">
+		                        <li>
+		                         <label class="checkbox-inline">
+		                              <input type="checkbox" name="goalCheck" value=1>Informations
+		                         </label>
+		                        </li>
+		                        <li>
+		                         <label class="checkbox-inline">
+		                              <input type="checkbox" name="goalCheck" value=2>Work
+		                         </label>
+		                        </li>
+		                        <li>
+		                         <label class="checkbox-inline">
+		                              <input type="checkbox" name="goalCheck" value=3>Chat
+		                         </label>
+		                        </li>
+		                        <li>
+		                         <label class="checkbox-inline">
+		                              <input type="checkbox" name="goalCheck" value=4>Entertainment
+		                         </label>
+		                        </li>
+		                        <li>
+		                         <label class="checkbox-inline">
+		                              <input type="checkbox" name="goalCheck" value=5>Shopping/Finance
+		                         </label>
+		                        </li>
+		                     </ul>
+		                </div>
+					    <div id="goal" class="col-sm-6">
+				            (In checkboxes, choose one or more options you think, describes the best your actual browsing goal.)
+				      	</div>
+					</div>
+				    
+				    <div class="form-group row">
+				      <div class="col-md-offset-4 col-md-5">
+				        <button type="submit" id="save" class="btn btn-primary">Update</button>
+				      </div>
+				    </div>
+				  </form>
+				</div>
+            </div>
+        </div>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/0.4.1/sweet-alert.min.js"></script>
+        <script src="scripts/config.js"></script>
+        <script src="scripts/connection.js"></script>
+        <script src="scripts/optionsRuntime.js"></script>
+    </body>
+</html>

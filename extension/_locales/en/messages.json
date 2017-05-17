@@ -1,0 +1,10 @@
+{
+  "extName": {
+    "message": "EffectiveBrowsing",
+    "description": "Extension name applied for Google Chrome"
+  }
+  // "extDescr": {
+  //   "message": "Personalized recommendation and reorganization of tabs in browser.",
+  //   "description": "Description of extension work."
+  // }
+}

@@ -1,0 +1,48 @@
+{
+  "version": "1.0.1",
+  "manifest_version": 2,
+  "icons":{
+	   "16": "images/EB_16.png",
+     "128": "images/EB_128.png"  
+  },
+  "name": "__MSG_extName__",
+  "default_locale": "en",
+  "background": {
+      "persistent":true,
+        "scripts": [
+            "jquery.js",
+            "hashes.js",
+            "scripts/runtime.js",
+            "scripts/config.js",
+            "scripts/user.js",
+            "scripts/connection.js",
+            "scripts/optionsRuntime.js",
+            "scripts/background.js",
+            "scripts/logg.js",
+            "scripts/observer.js"
+        ]
+  },
+  "content_scripts": [
+      {
+        "matches": ["https://*/*", "http://*/*"],
+        "js": ["jquery.js", "content2.js"]
+      }
+    ],
+   
+  "browser_action": {
+     "default_icon": "images/EB2.png",
+     "default_popup": "popup.html",
+	   "default_title": "EffectiveBrowsing"
+  },
+  "options_page": "options.html",
+  "web_accessible_resources": ["images/favicon.ico", "content2.js", "rate.html", "result.html", "rateWebsite.js", "result.js", "inject.js", "inject2.js"],
+  "permissions": ["http://*/", "https://*/", "history", "tabs", "webNavigation", "activeTab", "storage", "unlimitedStorage",
+	    "http://michalkorbel.mofa.sk/*",
+	    "http://163.172.179.17/*",
+      "https://ajax.googleapis.com/*",
+      "https://cdnjs.cloudflare.com/*",
+      "https://www.atlasestateagents.co.uk/*",
+	    "https://cdn.rawgit.com/h2non/jsHashes/master/hashes.js"
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://cdnjs.cloudflare.com https://www.atlasestateagents.co.uk/ https://ajax.googleapis.com; object-src 'self'"
+}
