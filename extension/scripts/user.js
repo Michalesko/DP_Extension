@@ -28,7 +28,11 @@
                   return createNewUser(res.userId);
                 }
             });
-            handleData(res.userId, sessionId, res.goalType, res.dbId);
+            chrome.storage.sync.set({
+               'sessionId': sessionId
+            }, function(){
+                handleData(res.userId, sessionId, res.goalType, res.dbId);
+            });
         }else{
             if(isTesting){
                 console.log('2 vetva: User is not created');
