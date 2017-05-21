@@ -38,7 +38,8 @@
                     chrome.storage.sync.set({
                        'userId': newId,
                        'dbId': input,
-                       'goalType': goalType
+                       'goalType': goalType,
+                       'sessionId': sessionId
                     }, function(){
                         handleData(newId, sessionId, goalType, input);
                     });
